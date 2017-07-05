@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movie Database</title>
+</head>
+
+<body>
+  <form class="" action="/" method="post">
+    <input type="text" name="name" value="" placeholder="Movie Name">
+    <input type="text" name="length" value="" placeholder="Length In Minutes">
+    <input type="text" name="rating" value="" placeholder="Movie Rating">
+
+    <button type="submit" name="button">Submit</button>
+  </form>
+
+  <h3>Movies</h3>
+  <ul>
+    {{#movies}}
+    <li>Movie Name: {{name}}</li>
+    <li>Length: {{length}} minutes</li>
+    <li>Rated; {{rating}} by the Major Movie Association</li>
+    <br>
+    {{/movies}}
+  </ul>
+</body>
+
+</html>
